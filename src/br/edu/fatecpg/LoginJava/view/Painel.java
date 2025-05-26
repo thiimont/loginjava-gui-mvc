@@ -43,7 +43,7 @@ public class Painel extends JFrame {
 		contentPane.add(btn_logout);
 	}
 	
-	public void setController(Controller controller) {
+	protected void setController(Controller controller) {
 		this.controller = controller;
 	}
 	

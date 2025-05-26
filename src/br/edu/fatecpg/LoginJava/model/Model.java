@@ -20,9 +20,10 @@ public class Model {
 		if (senha.length != senhaPadrao.length) {
 	        correta = false;
 	    } else {
-	        for (int i = 0; i < senha.length; i++) {
-	            if (senha[i] != senhaPadrao[i]) {
+	        for (int caractere = 0; caractere < senhaPadrao.length; caractere++) {
+	            if (senha[caractere] != senhaPadrao[caractere]) {
 	                correta = false;
+					break;
 	            }
 	        }
 	    }

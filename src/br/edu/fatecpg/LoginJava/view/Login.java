@@ -75,7 +75,7 @@ public class Login extends JFrame {
 		contentPane.add(lbl_titulo);
 	}
 	
-	public void setController(Controller controller) {
+	protected void setController(Controller controller) {
 		this.controller = controller;
 	}
 	
