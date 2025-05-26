@@ -2,9 +2,11 @@ package br.edu.fatecpg.LoginJava.model;
 
 import br.edu.fatecpg.LoginJava.view.Depuracao;
 
+import java.util.Arrays;
+
 public class Model {
 	private String usuarioPadrao = "admin";
-	private Depuracao depuracao;
+	private final Depuracao depuracao;
 	
 	public Model(Depuracao depuracao) {
 		this.depuracao = depuracao;
@@ -25,12 +27,8 @@ public class Model {
 	        }
 	    }
 		
-		for (int i = 0; i < senhaPadrao.length; i++) {
-	        senhaPadrao[i] = 0;
-	    }
-		
+		Arrays.fill(senhaPadrao, '0');
 		return correta;
-
 	}
 	
 	public boolean verificarLogin(String usuario, char[] senha) {

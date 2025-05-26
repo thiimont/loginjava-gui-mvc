@@ -24,7 +24,7 @@ public class Login extends JFrame {
 	private JPasswordField pwd_senha;
 	private JLabel lbl_mensagem;
 	private Controller controller;
-	private Depuracao depuracao;
+	private final Depuracao depuracao;
 
 	public Login(Depuracao depuracao) {
 		this.depuracao = depuracao;
@@ -70,8 +70,8 @@ public class Login extends JFrame {
 		contentPane.add(btn_login);
 		
 		JLabel lbl_titulo = new JLabel("Login");
-		lbl_titulo.setFont(new Font("Dialog", Font.BOLD, 20));
-		lbl_titulo.setBounds(201, 41, 60, 36);
+		lbl_titulo.setFont(new Font("Dialog", Font.BOLD, 30));
+		lbl_titulo.setBounds(185, 35, 90, 40);
 		contentPane.add(lbl_titulo);
 	}
 	

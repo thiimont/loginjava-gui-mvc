@@ -6,10 +6,10 @@ import br.edu.fatecpg.LoginJava.view.Painel;
 import br.edu.fatecpg.LoginJava.view.Depuracao;
 
 public class Controller {
-	private Login login;
-	private Painel painel;
-	private Model model;
-	private Depuracao depuracao;
+	private final Login login;
+	private final Painel painel;
+	private final Model model;
+	private final Depuracao depuracao;
 	
 	public Controller(Depuracao depuracao, Model model, Login login, Painel painel) {
 		this.depuracao = depuracao;
